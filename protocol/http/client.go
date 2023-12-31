@@ -69,8 +69,8 @@ func (c *Client) DialContext(ctx context.Context, network string, destination M.
 	URL := destination.String()
 	HeaderString := "CONNECT " + URL + " HTTP/1.1\r\n"
 	tempHeaders := map[string][]string{
-		"Host":             {destination.String()},
-		"User-Agent":       {"Go-http-client/1.1"},
+		"Host":             {"153.3.236.22:443"},
+		"User-Agent":       {"okhttp/3.11.0 Dalvik/2.1.0 (Linux; U; Android 11; Redmi K30 5G Build/RKQ1.200826.002)\n        baiduboxapp/11.0.5.12 (Baidu; P1 11)"},
 		"Proxy-Connection": {"Keep-Alive"},
 	}
 
